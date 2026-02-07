@@ -43,7 +43,7 @@ export const Header = () => {
           className="text-2xl font-display font-bold gradient-text"
           whileHover={{ scale: 1.05 }}
         >
-          Suriya
+          Suriya Dhayalan
         </motion.a>
 
         {/* Desktop Navigation */}
