@@ -40,9 +40,9 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-muted-foreground mb-10 mx-auto"
           >
-            I turn Figma designs into fast, scalable, pixel-perfect web apps.
+            I build fast, scalable, pixel-perfect web applications from Figma designs using React, Next.js, Redux, REST APIs, and modern frontend architecture.
           </motion.p>
 
           <motion.div

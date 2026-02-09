@@ -91,7 +91,7 @@ export const ContactSection = () => {
           <span className="text-primary font-medium">Get in touch</span>
           <h2 className="section-heading mt-2">Contact Me</h2>
           <p className="section-subheading mx-auto">
-            Open to frontend roles, freelance work, and collaboration.
+            Looking for a React / Next.js developer who understands APIs, Redux state management, and production deployments? Let’s connect.
           </p>
         </div>
 

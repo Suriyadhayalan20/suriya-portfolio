@@ -95,7 +95,7 @@ export const ProjectsSection = () => {
           <span className="text-primary font-medium">My work</span>
           <h2 className="section-heading mt-2">Key Projects</h2>
           <p className="section-subheading mx-auto">
-           Real-world projects across product, healthcare, and corporate domains
+          Production projects built using React, Next.js, Redux, REST APIs, and deployed via Vercel and Hostinger.
           </p>
         </div>
 

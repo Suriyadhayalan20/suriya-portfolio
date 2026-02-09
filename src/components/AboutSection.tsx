@@ -54,13 +54,16 @@ export const AboutSection = () => {
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Frontend Engineer with <span className="text-foreground font-medium">2.5 years of experience</span> building scalable web applications using{" "}
+              Frontend Engineer with <span className="text-foreground font-medium">2.5 years of experience</span> building modern, scalable web applications{" "}
               <span className="text-primary font-medium">React JS</span>,{" "}
               <span className="text-primary font-medium">Next JS</span>, and{" "}
               <span className="text-primary font-medium">Tailwind CSS</span>.
             </p>
+            <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+              I specialize in translating Figma designs into responsive, high-performance user interfaces, integrating REST APIs, and collaborating with Node.js backend services to create dynamic real-world applications.
+            </p>
             <p className="text-lg text-muted-foreground leading-relaxed mt-4 mb-8">
-              Specialized in translating Figma designs into pixel-perfect, responsive interfaces and optimizing performance for real-world products.
+              I   manage code using Git & GitHub workflows and deploy production projects using Vercel and Hostinger.
             </p>
 
             <ul className="grid sm:grid-cols-2 gap-4">
