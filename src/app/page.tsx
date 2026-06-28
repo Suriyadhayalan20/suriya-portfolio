@@ -1,29 +1,27 @@
 "use client";
 
-import { Header } from "@/components/Header";
-import { HeroSection } from "@/components/HeroSection";
-import { AboutSection } from "@/components/AboutSection";
-import { SkillsSection } from "@/components/SkillsSection";
-import { ExperienceSection } from "@/components/ExperienceSection";
-import { ProjectsSection } from "@/components/ProjectsSection";
-import { EducationSection } from "@/components/EducationSection";
+import HeroSection from "@/components/arvind/HeroSection";
+import MarqueeSection from "@/components/arvind/MarqueeSection";
+import AboutSection from "@/components/arvind/AboutSection";
+import ExperienceSection from "@/components/arvind/ExperienceSection";
+import ServicesSection from "@/components/arvind/ServicesSection";
+import ProjectsSection from "@/components/arvind/ProjectsSection";
+import EducationSection from "@/components/arvind/EducationSection";
+import Footer from "@/components/arvind/Footer";
 import { ContactSection } from "@/components/ContactSection";
-import { Footer } from "@/components/Footer";
 
 export default function Home() {
     return (
-        <div className="min-h-screen bg-background">
-            <Header />
-            <main>
-                <HeroSection />
-                <AboutSection />
-                <SkillsSection />
-                <ExperienceSection />
-                <ProjectsSection />
-                <EducationSection />
-                <ContactSection />
-            </main>
+        <main className="arvind-root" style={{ backgroundColor: "#0C0C0C", overflowX: "clip" }}>
+            <HeroSection />
+            <MarqueeSection />
+            <AboutSection />
+            <ExperienceSection />
+            <ServicesSection />
+            <ProjectsSection />
+            <EducationSection />
+            <ContactSection />
             <Footer />
-        </div>
+        </main>
     );
 }

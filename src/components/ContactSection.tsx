@@ -1,9 +1,8 @@
+"use client";
+
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Mail, Phone, MapPin, Linkedin, Send, CheckCircle } from "lucide-react";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
 
 const contactInfo = [
   {
@@ -31,6 +30,9 @@ const contactInfo = [
     href: "https://linkedin.com/in/suriyadhayalan",
   },
 ];
+
+const fieldClass =
+  "w-full rounded-2xl border border-[#D7E2EA]/20 bg-[#111111] px-5 py-4 text-sm sm:text-base text-[#D7E2EA] placeholder:text-[#D7E2EA]/40 outline-none transition-colors duration-200 focus:border-[#D7E2EA]/60";
 
 export const ContactSection = () => {
   const ref = useRef(null);
@@ -85,128 +87,136 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 relative">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <span className="text-primary font-medium">Get in touch</span>
-          <h2 className="section-heading mt-2">Contact Me</h2>
-          <p className="section-subheading mx-auto">
-            Looking for a React / Next.js developer who understands APIs, Redux state management, and production deployments? Let’s connect.
-          </p>
+    <section
+      id="contact"
+      className="scroll-mt-20 px-5 py-20 sm:px-8 sm:py-24 md:px-10 md:py-32"
+      style={{ backgroundColor: "#0C0C0C" }}
+    >
+      <div className="flex flex-col items-center pb-16 sm:pb-20 md:pb-24">
+        <h2
+          className="hero-heading font-black uppercase leading-none tracking-tight text-center w-full"
+          style={{ fontSize: "clamp(3rem, 12vw, 160px)" }}
+        >
+          Contact
+        </h2>
+        <p className="mt-6 max-w-2xl text-center text-sm font-light leading-relaxed text-[#D7E2EA]/70 sm:text-base md:text-lg">
+          Looking for a React / Next.js developer who understands APIs, Redux state
+          management, and production deployments? Let&apos;s connect.
+        </p>
+      </div>
+
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 50 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.6 }}
+        className="mx-auto grid w-full max-w-5xl gap-6 md:gap-8 lg:grid-cols-2"
+      >
+        {/* Contact Info */}
+        <div className="rounded-[30px] border border-[#D7E2EA]/20 p-6 sm:p-8 md:rounded-[40px]">
+          <h3 className="text-lg font-medium uppercase tracking-wide text-[#D7E2EA] sm:text-xl">
+            Contact Information
+          </h3>
+          <div className="mt-6 flex flex-col gap-3">
+            {contactInfo.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                target={item.href.startsWith("http") ? "_blank" : undefined}
+                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                className="group flex items-center gap-4 rounded-2xl border border-transparent p-3 transition-colors duration-200 hover:border-[#D7E2EA]/20 hover:bg-[#111111]"
+              >
+                <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-[#D7E2EA]/20 text-[#D7E2EA]">
+                  <item.icon className="h-5 w-5" />
+                </span>
+                <span className="flex flex-col">
+                  <span className="text-xs uppercase tracking-widest text-[#D7E2EA]/45">
+                    {item.label}
+                  </span>
+                  <span className="font-medium text-[#D7E2EA] transition-opacity duration-200 group-hover:opacity-80">
+                    {item.value}
+                  </span>
+                </span>
+              </a>
+            ))}
+          </div>
         </div>
 
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 50 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto"
-        >
-          {/* Contact Info */}
-          <div className="space-y-6">
-            <div className="glass-card p-8 rounded-xl">
-              <h3 className="text-xl font-display font-semibold mb-6">
-                Contact Information
-              </h3>
-              <div className="space-y-4">
-                {contactInfo.map((item) => (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    target={item.href.startsWith("http") ? "_blank" : undefined}
-                    rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="flex items-center gap-4 p-3 rounded-lg hover:bg-secondary transition-colors group"
-                  >
-                    <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                      <item.icon className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <div className="text-sm text-muted-foreground">{item.label}</div>
-                      <div className="font-medium text-foreground group-hover:text-primary transition-colors">
-                        {item.value}
-                      </div>
-                    </div>
-                  </a>
-                ))}
-              </div>
+        {/* Contact Form */}
+        <div className="rounded-[30px] border border-[#D7E2EA]/20 p-6 sm:p-8 md:rounded-[40px]">
+          <h3 className="text-lg font-medium uppercase tracking-wide text-[#D7E2EA] sm:text-xl">
+            Send me a message
+          </h3>
+
+          <form onSubmit={handleSubmit} className="mt-6 flex flex-col gap-4">
+            <div className="grid gap-4 sm:grid-cols-2">
+              <input
+                placeholder="Your Name"
+                value={form.name}
+                onChange={(e) => setForm({ ...form, name: e.target.value })}
+                className={fieldClass}
+                required
+              />
+
+              <input
+                type="email"
+                placeholder="Your Email"
+                value={form.email}
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
+                className={fieldClass}
+                required
+              />
             </div>
-          </div>
 
-          {/* Contact Form */}
-          <div className="glass-card p-8 rounded-xl">
-            <h3 className="text-xl font-display font-semibold mb-6">
-              Send me a message
-            </h3>
+            <input
+              placeholder="Subject"
+              value={form.subject}
+              onChange={(e) => setForm({ ...form, subject: e.target.value })}
+              className={fieldClass}
+              required
+            />
 
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid sm:grid-cols-2 gap-4">
-                <Input
-                  placeholder="Your Name"
-                  value={form.name}
-                  onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  className="bg-secondary border-border focus:border-primary"
-                  required
-                />
+            <textarea
+              placeholder="Your Message"
+              value={form.message}
+              onChange={(e) => setForm({ ...form, message: e.target.value })}
+              className={`${fieldClass} min-h-[140px] resize-none`}
+              required
+            />
 
-                <Input
-                  type="email"
-                  placeholder="Your Email"
-                  value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  className="bg-secondary border-border focus:border-primary"
-                  required
-                />
-              </div>
-
-              <Input
-                placeholder="Subject"
-                value={form.subject}
-                onChange={(e) => setForm({ ...form, subject: e.target.value })}
-                className="bg-secondary border-border focus:border-primary"
-                required
-              />
-
-              <Textarea
-                placeholder="Your Message"
-                value={form.message}
-                onChange={(e) => setForm({ ...form, message: e.target.value })}
-                className="bg-secondary border-border focus:border-primary min-h-[120px] resize-none"
-                required
-              />
-
-              <Button
-                type="submit"
-                className="w-full rounded-lg gap-2 bg-gradient-primary hover:opacity-90 transition-opacity"
-                disabled={isSubmitting || isSubmitted}
-              >
-                {isSubmitted ? (
-                  <>
-                    <CheckCircle className="h-4 w-4" />
-                    Message Sent!
-                  </>
-                ) : isSubmitting ? (
-                  "Sending..."
-                ) : (
-                  <>
-                    <Send className="h-4 w-4" />
-                    Send Inquiry
-                  </>
-                )}
-              </Button>
-
-              {/* Status Message */}
-              {statusMsg && (
-                <p
-                  className={`text-sm mt-3 text-center font-medium transition-all duration-300 ${isError ? "text-red-500" : "text-green-500"
-                    }`}
-                >
-                  {statusMsg}
-                </p>
+            <button
+              type="submit"
+              className="flex w-full items-center justify-center gap-2 rounded-full border border-[#D7E2EA] bg-[#D7E2EA] px-6 py-4 text-sm font-medium uppercase tracking-widest text-[#0C0C0C] transition-opacity duration-200 hover:opacity-90 disabled:opacity-60"
+              disabled={isSubmitting || isSubmitted}
+            >
+              {isSubmitted ? (
+                <>
+                  <CheckCircle className="h-4 w-4" />
+                  Message Sent!
+                </>
+              ) : isSubmitting ? (
+                "Sending..."
+              ) : (
+                <>
+                  <Send className="h-4 w-4" />
+                  Send Inquiry
+                </>
               )}
-            </form>
-          </div>
-        </motion.div>
-      </div>
+            </button>
+
+            {/* Status Message */}
+            {statusMsg && (
+              <p
+                className={`mt-1 text-center text-sm font-medium transition-all duration-300 ${
+                  isError ? "text-red-400" : "text-green-400"
+                }`}
+              >
+                {statusMsg}
+              </p>
+            )}
+          </form>
+        </div>
+      </motion.div>
     </section>
   );
 };

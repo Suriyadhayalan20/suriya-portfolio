@@ -1,0 +1,177 @@
+{
+  "profile": {
+    "name": "Suriya Dhayalan",
+    "shortName": "Suriya",
+    "tagline": "MERN Stack Developer building SaaS products, AI solutions, and scalable web applications.",
+    "role": "MERN Stack Developer",
+    "specialization": "MongoDB · Express · React · Node.js — SaaS, AI & Scalable Web Apps",
+    "location": "Chennai, India",
+    "yearsOfExperience": "2.5+",
+    "bio": "Full-Stack MERN Developer with 2.5+ years of experience building scalable web applications, AI-powered platforms, and enterprise solutions. Skilled in React.js, Next.js, TypeScript, Node.js, and MongoDB, with expertise in modern frontend architecture and API-driven development. Led the development of AI-enabled products, including real-time deepfake detection systems, recruitment platforms, and Chrome Extension-based solutions. Proven ability to own end-to-end product delivery — from design and development to deployment and production optimization.",
+    "avatarSvg": "/placeholder.svg",
+    "social": {
+      "github": "https://github.com/Suriyadhayalan20",
+      "instagram": "",
+      "linkedin": "https://linkedin.com/in/suriyadhayalan",
+      "email": "suriyadhayalan2001@gmail.com",
+      "phone": "+91 7397288546",
+      "website": "https://suriyadhayalan-portfolio.vercel.app"
+    }
+  },
+
+  "skills": {
+    "categories": [
+      {
+        "name": "Frontend",
+        "items": ["React.js", "Next.js", "JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Responsive Design", "Cross-Browser Compatibility", "UI/UX Development", "Component-Based Architecture"]
+      },
+      {
+        "name": "Backend",
+        "items": ["Node.js", "Express.js", "REST APIs", "API Integration", "Authentication & Authorization"]
+      },
+      {
+        "name": "Database & Storage",
+        "items": ["MongoDB", "PostgreSQL", "Prisma"]
+      },
+      {
+        "name": "AI & Real-Time Technologies",
+        "items": ["TensorFlow.js", "MediaPipe", "Deepfake Detection", "Computer Vision Integration", "Real-Time Analytics", "Behavioral Analysis", "Socket.io", "Live Data Processing"]
+      }
+    ]
+  },
+
+  "experience": [
+    {
+      "company": "Atna AI",
+      "role": "MERN Stack Developer (Contract)",
+      "period": "Mar 2026 — Present",
+      "location": "Contract",
+      "summary": "Building the company's web presence and AI-powered recruitment & meeting-security products end to end.",
+      "highlights": [
+        "Corporate Website Development — Designed and developed the company's official website with a modern, responsive, and user-friendly interface aligned with business objectives. Managed end-to-end implementation, testing, and deployment to ensure a seamless digital experience.",
+        "Intelli Hire Platform — Built the Intelli Hire product environment, creating intuitive workflows, dashboards, and recruitment management interfaces. Focused on delivering an efficient and scalable user experience for hiring and verification processes.",
+        "AI-Powered Deepfake Detection Extension — Developed a Google Meet Chrome Extension integrated with backend APIs for real-time participant analysis and deepfake detection. Led integration, testing, and deployment to deliver a production-ready fraud prevention solution."
+      ]
+    },
+    {
+      "company": "Crayon Biz LLP",
+      "role": "Frontend Developer",
+      "period": "Dec 2025 — Feb 2026",
+      "location": "India",
+      "summary": "Engineered high-performance dashboard experiences supporting business-critical workflows.",
+      "highlights": [
+        "Engineered scalable web applications using React.js, Next.js, TypeScript, and JavaScript, delivering high-performance dashboard experiences that supported business-critical workflows and enhanced user engagement.",
+        "Architected reusable component libraries and modular frontend frameworks, significantly improving code maintainability, development velocity, and long-term product scalability across multiple projects.",
+        "Integrated and optimized RESTful API ecosystems to enable real-time data visualization, seamless system communication, and data-driven decision-making through intuitive user interfaces.",
+        "Translated complex product requirements and Figma designs into pixel-perfect, responsive user experiences using React.js, Next.js, and Tailwind CSS, ensuring consistency, accessibility, and cross-device compatibility."
+      ]
+    },
+    {
+      "company": "iSource ITES Pvt Ltd",
+      "role": "Junior Web Developer",
+      "period": "Nov 2023 — Nov 2025",
+      "location": "India",
+      "summary": "Developed scalable, responsive interfaces and integrated REST APIs for production features.",
+      "highlights": [
+        "Developed scalable and responsive user interfaces using React.js, JavaScript, TypeScript, HTML5, and CSS based on design and product requirements.",
+        "Improved application performance through component optimization, efficient state management using React Hooks and Context API, and cross-browser compatibility enhancements.",
+        "Collaborated with designers and backend teams to integrate REST APIs and deliver seamless, production-ready frontend features."
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "atna-meeting-guardian",
+      "title": "ATNA Meeting Guardian",
+      "subtitle": "Real-time AI meeting security",
+      "description": "A real-time AI meeting security platform with a Chrome Extension that captures participant frames from live Google Meet sessions, runs TensorFlow.js + MediaPipe models to detect deepfakes and suspicious behavior, and surfaces risk scores on a live Next.js dashboard via Socket.io.",
+      "highlights": [
+        "Built a real-time AI meeting security platform with a Chrome Extension that captures participant frames and activity from live Google Meet sessions",
+        "Integrated TensorFlow.js and MediaPipe models to detect deepfakes, face swaps, and suspicious behavioral patterns in real time",
+        "Developed backend APIs and analysis pipelines to process captured frames, generate risk scores, and store detection results",
+        "Created a Next.js dashboard with Socket.io-based live updates to display participant insights, alerts, and meeting security analytics"
+      ],
+      "stack": ["Next.js", "Node.js", "TensorFlow.js", "MediaPipe", "Socket.io", "Chrome Extension"],
+      "role": "Full-Stack Developer",
+      "year": "2026",
+      "link": "",
+      "image": "/images/meeting%20bot%20dashboard.png",
+      "highlight": true
+    },
+    {
+      "id": "job-portal",
+      "title": "Job Portal Web Application",
+      "subtitle": "Full-stack recruitment platform",
+      "description": "A full-stack job portal with role-based access for Job Seekers, Employers, and Admins. Features NextAuth authentication, resume uploads via Cloudinary, job posting/application management, and end-to-end applicant tracking.",
+      "highlights": [
+        "Built a full-stack job portal using Next.js 14, TypeScript, MongoDB (Mongoose), and Tailwind CSS",
+        "Implemented role-based access for Job Seekers, Employers, and Admins, with secure NextAuth authentication",
+        "Enabled resume uploads via Cloudinary, job posting/application management, and applicant tracking",
+        "Delivered an end-to-end recruitment platform with intuitive workflows for every user role"
+      ],
+      "stack": ["Next.js 14", "TypeScript", "MongoDB", "Tailwind CSS", "NextAuth.js"],
+      "role": "Full-Stack Developer",
+      "year": "2025",
+      "link": "",
+      "image": "/images/Job%20portal%20hero.jfif"
+    },
+    {
+      "id": "atna-corporate-website",
+      "title": "ATNA AI Corporate Website",
+      "subtitle": "Official company website",
+      "description": "Designed and developed Atna AI's official corporate website with a modern, responsive, and user-friendly interface aligned with the company's business objectives. Owned the project end to end — implementation, testing, and production deployment — to deliver a seamless digital experience that showcases the company's AI products and brand identity.",
+      "highlights": [
+        "Designed and developed the company's official website with a modern, responsive, user-friendly interface aligned with business objectives",
+        "Owned end-to-end implementation, testing, and production deployment for a seamless digital experience",
+        "Structured intuitive layouts to showcase the company's AI products, services, and brand identity",
+        "Ensured cross-device compatibility and optimized performance across desktop and mobile"
+      ],
+      "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Responsive Design"],
+      "role": "MERN Stack Developer",
+      "year": "2026",
+      "link": "",
+      "image": "/images/atna%20site%20hero.png"
+    },
+    {
+      "id": "grb-corporate-website",
+      "title": "GRB Corporate Website",
+      "subtitle": "Responsive corporate site",
+      "description": "A modern, responsive corporate website aligned with GRB's brand identity, with intuitive React.js + Tailwind UIs and SendGrid-powered contact and enquiry forms automating customer communication and lead management.",
+      "highlights": [
+        "Designed and developed a modern, responsive corporate website aligned with GRB's brand identity and business objectives",
+        "Built intuitive user interfaces using React.js and Tailwind CSS, ensuring optimal performance across desktop and mobile devices",
+        "Integrated SendGrid-powered contact and enquiry forms to automate customer communication and lead management workflows",
+        "Collaborated with stakeholders to deliver a production-ready website with enhanced usability, scalability, and customer engagement"
+      ],
+      "stack": ["React.js", "Tailwind CSS", "SendGrid"],
+      "role": "Frontend Developer",
+      "year": "2025",
+      "link": "",
+      "image": "/images/grb%20site%20hero.jfif"
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "Kumararani Meena Muthiah College of Arts & Science",
+      "location": "Chennai, India",
+      "degree": "Bachelor of Computer Applications (BCA) — 80%",
+      "period": "2018 — 2021"
+    },
+    {
+      "institution": "Santhome Higher Secondary",
+      "location": "Chennai, India",
+      "degree": "Higher Secondary — 75%",
+      "period": ""
+    },
+    {
+      "institution": "Besant Technologies",
+      "location": "India",
+      "degree": "Certification — MERN Stack Development",
+      "period": ""
+    }
+  ],
+
+  "testimonials": []
+}
