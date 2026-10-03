@@ -15,8 +15,8 @@ const kanit = Kanit({
 });
 
 export const metadata = {
-    title: "Suriya's Portfolio",
-    description: "Personal Portfolio Website",
+    title: "Suriya Dhayalan — AI Engineer",
+    description: "AI Engineer building LLM apps, RAG search, AI agents and computer vision systems.",
 };
 
 export default function RootLayout({
