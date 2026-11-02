@@ -2,12 +2,12 @@
   "profile": {
     "name": "Suriya Dhayalan",
     "shortName": "Suriya",
-    "tagline": "AI Engineer building RAG search, Generative AI and AI agents — with a strong full-stack background.",
+    "tagline": "AI Engineer · Agentic AI · Enterprise RAG · Computer Vision",
     "role": "AI Engineer",
-    "specialization": "AI Engineer · RAG · Generative AI · AI Agents · Full-Stack (Next.js, TypeScript, Node.js)",
+    "specialization": "AI Engineer · Agentic AI · Enterprise RAG · Computer Vision · Full-Stack",
     "location": "Chennai, India",
-    "yearsOfExperience": "2.5+",
-    "bio": "AI Engineer with 2.5+ years of experience and a strong full-stack background in React, Next.js, TypeScript and Node.js. I build production AI features: a RAG assistant with pgvector semantic search, a tool-calling AI agent with human approval, an LLM evaluation suite, AI call transcription and analysis, and a real-time deepfake detection system for video interviews. I focus on safe and testable AI — validated LLM outputs, PII masking, audit logs, and fallbacks when a model fails. My full-stack skills let me own an AI feature end to end, from the model call to the UI and deployment.",
+    "yearsOfExperience": "3",
+    "bio": "AI Engineer with 3 years of experience building and deploying production Generative AI, Agentic AI, and Computer Vision solutions. Specializing in autonomous multi-agent workflows with LangGraph, enterprise RAG platforms with ChromaDB and pgvector, real-time interview proctoring with OpenCV and MediaPipe, and automated LLMOps evaluation suites. Adept at bridging state-of-the-art foundation models (Gemini, Claude, GPT-4o) with resilient full-stack systems to solve high-impact business problems.",
     "avatarSvg": "/placeholder.svg",
     "social": {
       "github": "https://github.com/Suriyadhayalan20",
@@ -21,79 +21,83 @@
   "skills": {
     "categories": [
       {
-        "name": "AI & LLM Engineering",
+        "name": "Agentic AI & LLMs",
         "items": [
-          "LLM Integration",
-          "RAG",
+          "LangGraph",
+          "AI Agents",
+          "Multi-Agent Systems",
+          "Autonomous Workflows",
+          "Tool Calling / Function Calling",
+          "Human-in-the-Loop",
+          "Structured Outputs",
+          "Prompt Engineering",
+          "ReAct Framework"
+        ]
+      },
+      {
+        "name": "RAG & Vector Databases",
+        "items": [
+          "Retrieval-Augmented Generation (RAG)",
+          "ChromaDB",
+          "PostgreSQL + pgvector",
           "Vector Embeddings",
           "Semantic Search",
-          "Function Calling / Tool Use",
-          "AI Agents",
-          "Human-in-the-Loop",
-          "Prompt Engineering",
-          "Structured Outputs",
-          "LLM Evals",
-          "Streaming Responses",
-          "Speech-to-Text",
-          "PII Masking"
+          "Hybrid Search",
+          "Context Optimization",
+          "Reranking"
         ]
       },
       {
-        "name": "AI APIs & Models",
+        "name": "Computer Vision & Multimodal AI",
+        "items": [
+          "YOLO11",
+          "OpenCV",
+          "MediaPipe (Iris & Face)",
+          "Deepfake Detection",
+          "Lip-Sync Detection",
+          "RapidOCR",
+          "Object Tracking",
+          "Asynchronous Video Processing"
+        ]
+      },
+      {
+        "name": "Foundation Models & APIs",
         "items": [
           "Google Gemini API",
-          "Gemini Embeddings",
           "Anthropic Claude API",
-          "OpenAI API"
+          "OpenAI API",
+          "LLM APIs",
+          "Multimodal LLMs",
+          "Streaming Responses",
+          "Model Fallbacks"
         ]
       },
       {
-        "name": "Computer Vision & ML",
+        "name": "LLMOps & Evaluation",
         "items": [
-          "PyTorch (CNN)",
-          "TensorFlow.js",
-          "MediaPipe",
-          "Face & Iris Landmarks",
-          "Deepfake Detection",
-          "Liveness Detection"
+          "LLM Evals & Benchmarking",
+          "Scikit-learn",
+          "PyTorch",
+          "Anomaly Detection",
+          "PII Masking & Safe AI",
+          "Zod & Pydantic Validation",
+          "Docker",
+          "CUDA"
         ]
       },
       {
-        "name": "Languages",
+        "name": "Full-Stack AI Engineering",
         "items": [
+          "Python",
           "TypeScript",
           "JavaScript",
-          "Python",
-          "SQL"
-        ]
-      },
-      {
-        "name": "Backend & Data",
-        "items": [
-          "Node.js",
-          "Next.js API Routes",
-          "Express.js",
-          "REST APIs",
-          "PostgreSQL",
-          "pgvector",
-          "Prisma",
-          "Neon",
-          "MongoDB",
-          "Zod"
-        ]
-      },
-      {
-        "name": "Frontend & Tools",
-        "items": [
-          "React.js",
+          "FastAPI",
           "Next.js",
-          "Tailwind CSS",
-          "Docker",
-          "Git",
-          "Vercel",
-          "ffmpeg",
-          "Chrome Extensions",
-          "Socket.io"
+          "React.js",
+          "Node.js",
+          "PostgreSQL",
+          "MongoDB",
+          "SQLAlchemy"
         ]
       }
     ]
@@ -101,72 +105,71 @@
   "experience": [
     {
       "company": "Atna AI",
+      "role": "Junior AI Engineer",
+      "period": "April 2026 – Present",
+      "location": "Chennai, India",
+      "summary": "Architecting production Generative AI, Agentic AI workflows, and Computer Vision proctoring systems using LangGraph, Gemini, Claude, pgvector, and MediaPipe.",
+      "highlights": [
+        "Built an AI sales platform (SalesRocks) with Ask AI (RAG) and an autonomous CRM agent (Do AI) using LangGraph, Gemini, Claude, and pgvector with human approval gates.",
+        "Built a meeting bot that automatically joins Google Meet, Teams, and Zoom interviews to detect deepfake faces, cloned voices, and liveness bypass attacks in real time.",
+        "Built live eye tracking and lip-sync detection with Python, OpenCV, and MediaPipe, identifying look-aways and audio-visual mismatches with automatic video proof capture.",
+        "Collected, curated, and balanced multimodal datasets for deepfake and lip-sync models, applying data augmentation to ensure high accuracy on real-world video."
+      ]
+    },
+    {
+      "company": "Crayon Biz",
       "role": "Software Developer",
-      "period": "Mar 2026 — Present",
-      "location": "Contract",
-      "summary": "Working on full-stack projects and building AI chatbots, RAG and Generative AI features — on a Next.js, TypeScript, Node.js and PostgreSQL stack.",
+      "period": "Dec 2025 – Mar 2026",
+      "location": "Chennai, India",
+      "summary": "Developed fraud intelligence dashboards displaying KYC, KYB, document verification, and fraud signals through structured, user-friendly interfaces.",
       "highlights": [
-        "Full-stack projects: built SalesRocks features (multi-tenant setup, two-factor login, in-browser calling, dashboards), Atna Product modules and the company website.",
-        "AI chatbot: built Ask AI — a chat assistant that streams answers, cites sources and suggests follow-up questions.",
-        "RAG: built the vector search pipeline — data is chunked, embedded with Gemini embeddings and searched with PostgreSQL + pgvector.",
-        "Generative AI: built Do AI, an AI agent with LLM function calling, and AI call analysis with Gemini + Claude structured outputs.",
-        "Safe AI: LLM eval suite (32 + 10 checks), PII masking, Zod validation, audit logs and model fallbacks.",
-        "AI video security: built the Deepfake Meeting Guardian for Google Meet, Teams and Zoom interviews."
+        "Developed fraud intelligence dashboards displaying KYC, KYB, document verification, and fraud signals through structured, user-friendly interfaces.",
+        "Built reusable UI components and modular frontend architecture, improving development efficiency by 25%.",
+        "Integrated frontend applications with backend APIs to retrieve and display real-time operational data.",
+        "Converted design prototypes into production-ready, responsive UI components, improving cross-device responsiveness by 2×.",
+        "Supported production deployments and version control workflows to ensure stable releases."
       ]
     },
     {
-      "company": "Crayon Biz LLP",
-      "role": "Frontend Developer",
-      "period": "Dec 2025 — Feb 2026",
-      "location": "India",
-      "summary": "Built high-performance dashboards for business-critical workflows.",
+      "company": "iSource Pvt Ltd",
+      "role": "Web Developer",
+      "period": "Nov 2023 – Nov 2025",
+      "location": "Chennai, India",
+      "summary": "Built outbound sales automation pipelines and integrated LLM-generated prospecting modules for healthcare GTM verticals.",
       "highlights": [
-        "Built scalable web apps with React.js, Next.js and TypeScript for business-critical dashboards.",
-        "Created reusable component libraries that sped up development across multiple projects.",
-        "Integrated REST APIs for real-time data visualization and decision-making.",
-        "Turned Figma designs into responsive, accessible UIs with Tailwind CSS."
-      ]
-    },
-    {
-      "company": "iSource ITES Pvt Ltd",
-      "role": "Junior Web Developer",
-      "period": "Nov 2023 — Nov 2025",
-      "location": "India",
-      "summary": "Built responsive interfaces and integrated REST APIs for production features.",
-      "highlights": [
-        "Developed responsive user interfaces with React.js, JavaScript, TypeScript, HTML5 and CSS.",
-        "Improved performance with component optimization and efficient state management (Hooks, Context API).",
-        "Worked with designers and backend teams to ship production-ready features."
+        "Contributed to HealthBound Digital, building outbound automation pipelines using React.js, Express.js, Node.js, and PostgreSQL.",
+        "Automated email and LinkedIn outreach workflows for lead enrichment, replacing manual discovery calls and boosting outreach efficiency by 60%.",
+        "Built modules to generate contextual AI outreach content and personalized messaging for healthcare prospecting.",
+        "Maintained and supported web applications across healthcare IT and digital marketing service lines."
       ]
     }
   ],
   "projects": [
     {
       "id": "salesrocks-ai",
-      "title": "SalesRocks — AI Sales Product",
-      "subtitle": "RAG · Generative AI · Ask AI · Do AI",
-      "description": "An AI-powered sales platform. I built its AI features: a RAG assistant, a tool-calling AI agent with human approval, an LLM eval suite, PII masking and AI call analysis.",
+      "title": "SalesRocks — Enterprise AI Sales Platform",
+      "subtitle": "RAG · Generative AI · AI Agents",
+      "description": "An enterprise AI sales platform featuring an interactive RAG assistant (Ask AI) and an autonomous CRM multi-agent system (Do AI) that plans, validates, and executes CRM workflows with human-in-the-loop oversight.",
       "highlights": [
-        "Ask AI (RAG): answers questions from the company's own calls, emails, leads and deals — streams answers, cites sources and suggests follow-up questions",
-        "Vector search: records are chunked, embedded with Gemini embeddings and stored in PostgreSQL + pgvector, indexed on save plus a 5-minute background job",
-        "Do AI (agent): uses LLM function calling to read data and propose actions (create task, draft email, score lead) — nothing runs until a person approves",
-        "Safe AI: every AI action is checked with Zod twice and logged for audit; PII is masked before it reaches the LLM",
-        "LLM evals: 32 known-answer checks + 10 system checks, run with one command, to catch mistakes when prompts change",
-        "AI call analysis: Gemini transcribes calls; Claude returns structured JSON — summary, sentiment, buying intent, objections, next steps",
-        "Switchable Gemini / Claude provider with safe fallbacks when a model or quota fails"
+        "Ask AI (Enterprise RAG): contextual question-answering across sales calls, emails, leads, and CRM records using Gemini embeddings and PostgreSQL + pgvector with source attribution and follow-up suggestions",
+        "Do AI (Autonomous Multi-Agent): built with LangGraph and tool calling to plan multi-step sales actions (lead scoring, email drafting, deal updates) requiring explicit human confirmation before execution",
+        "Safe AI & Evals: dual Zod schema validation, PII masking before inference, audit trails, and an automated LLM evaluation suite of 32 benchmark checks + 10 system invariant tests",
+        "AI Call Forensics: automated call transcription with Gemini and structured extraction of buyer sentiment, objections, and next steps via Claude structured outputs",
+        "Resilient multi-model gateway: automated fallback routing between Google Gemini and Anthropic Claude APIs to guarantee 99.9% availability"
       ],
       "stack": [
-        "Next.js",
-        "TypeScript",
+        "LangGraph",
         "Gemini API",
         "Claude API",
         "RAG",
         "pgvector",
-        "Function Calling",
+        "PostgreSQL",
+        "Next.js",
+        "TypeScript",
         "Zod",
         "LLM Evals"
       ],
-      "role": "Full-Stack + AI",
+      "role": "Junior AI Engineer",
       "year": "2026",
       "link": "",
       "image": "/images/salesrocks.png"
@@ -175,93 +178,135 @@
       "id": "atna-meeting-guardian",
       "title": "Meeting Bot — Deepfake Guardian",
       "subtitle": "Real-time AI interview proctoring",
-      "description": "A system that checks whether a candidate in a Google Meet, Teams or Zoom interview is a real, live person — deepfake face, face swap, liveness, lip-sync and AI-voice checks.",
+      "description": "An autonomous interview monitoring bot that joins Google Meet, Microsoft Teams, and Zoom calls in real time to detect synthetic faces, cloned audio, and liveness bypass attacks.",
       "highlights": [
-        "Pluggable detection: frames and audio go to detector model servers, with a local TensorFlow.js model and audio heuristics as fallback",
-        "Iris-based eye-gaze tracking with MediaPipe to detect look-aways and tab switches — nothing to install for the candidate",
-        "3 capture methods: a server-side meeting bot (ffmpeg), browser screen capture, and a Chrome extension",
-        "Live audit dashboard with real-time risk scores, per-participant risk reports and bulk 'scan all deepfakes'"
+        "Autonomous meeting integration: headless bot that automatically joins scheduled video interviews across Google Meet, Zoom, and Teams to intercept live video/audio feeds",
+        "Deepfake & voice anti-spoofing: analyzes video frames and audio spectral patterns for face swaps, puppet attacks, lip desync, and cloned voices using deep learning models",
+        "Pluggable detector microservices: asynchronous frame-routing pipeline streaming to detector servers with local TensorFlow.js and audio heuristics fallback",
+        "Live proctoring dashboard: real-time threat telemetry, per-participant risk scores, forensic timeline markers, and instant cheating alerts"
       ],
       "stack": [
-        "Next.js",
+        "Python",
+        "OpenCV",
         "TensorFlow.js",
-        "MediaPipe",
-        "PostgreSQL",
         "Docker",
-        "Chrome Extension"
+        "ffmpeg",
+        "FastAPI",
+        "PostgreSQL",
+        "Next.js"
       ],
-      "role": "Full-Stack + AI",
+      "role": "Junior AI Engineer",
       "year": "2026",
       "link": "",
       "image": "/images/meeting%20bot%20dashboard.png"
     },
     {
-      "id": "atna-product",
-      "title": "Atna Product",
-      "subtitle": "B2B document forensics & screening platform",
-      "description": "A B2B platform for document forensics and background screening.",
+      "id": "eye-tracking-proctoring",
+      "title": "Live Eye Tracking & Lip-Sync Detection",
+      "subtitle": "Real-time AI interview proctoring",
+      "description": "A computer vision proctoring engine that performs real-time iris-gaze tracking and audio-visual lip-sync verification during live interviews, capturing timestamped video proof for security audits.",
       "highlights": [
-        "Built the dashboard, customer management, profile and lookup modules",
-        "Built shared platform-admin UI components used across the product",
-        "Added real-time notifications with Server-Sent Events (SSE)",
-        "Built with Next.js and TypeScript for a fast, clean user experience"
+        "Real-time gaze & iris tracking: tracks 3D iris position and facial landmarks via Python, OpenCV, and MediaPipe to detect candidate look-aways, screen switching, or off-screen cheating",
+        "Audio-visual lip-sync verification: correlates lip motion landmarks against audio phonemes to detect proxy interviewers, lip dubbing, or pre-recorded audio feeds",
+        "Automated video evidence capture: triggers automatic recording and archival of short, timestamped video proof clips whenever anomaly thresholds are breached",
+        "Dataset curation & class balancing: collected, augmented, and balanced face, video, and audio datasets to maximize detection accuracy across diverse real-world lighting and accents",
+        "Zero-install clientless pipeline: runs low-latency inference over browser WebRTC streams with zero software installation required on the candidate's machine"
       ],
       "stack": [
-        "Next.js",
-        "TypeScript",
-        "Server-Sent Events",
-        "Tailwind CSS"
+        "Python",
+        "OpenCV",
+        "MediaPipe",
+        "FastAPI",
+        "Computer Vision",
+        "Docker",
+        "Asynchronous Video Processing"
       ],
-      "role": "Full-Stack Developer",
+      "role": "Junior AI Engineer",
+      "year": "2026",
+      "link": "",
+      "image": "/images/meeting%20bot%20dashboard.png"
+    },
+    {
+      "id": "vision-agent",
+      "title": "Vision Agent — Multi-Modal AI Assistant",
+      "subtitle": "Multi-Modal AI Agent · 13 AI Vision Tools",
+      "description": "An autonomous multi-modal AI agent that ingests images and high-resolution video streams to reason, inspect, and answer complex visual queries in natural language.",
+      "highlights": [
+        "13 specialized AI vision tools: seamlessly integrates YOLO11 object detection, RapidOCR text recognition, OpenCV YuNet face detection, scene classification, and optical flow tracking",
+        "Agentic tool routing & orchestration: dynamically decides and executes tool chains using LangGraph, OpenAI API, Anthropic Claude, and Gemini API via function calling",
+        "Asynchronous video processing: implements adaptive frame sampling and background processing queues to analyze long video streams with low latency",
+        "Interactive visual frontend: built with Next.js and FastAPI for real-time bounding box annotations, OCR text overlays, and conversational multi-turn Q&A"
+      ],
+      "stack": [
+        "Python",
+        "LangGraph",
+        "FastAPI",
+        "YOLO11",
+        "RapidOCR",
+        "OpenCV",
+        "Next.js",
+        "Gemini API",
+        "Claude API",
+        "Tool Calling"
+      ],
+      "role": "AI Engineer",
       "year": "2026",
       "link": "",
       "image": ""
     },
     {
-      "id": "job-portal",
-      "title": "AI Job Portal",
-      "subtitle": "AI-powered recruitment platform",
-      "description": "A full-stack job portal for Job Seekers, Employers and Admins, with AI job matching, resume parsing, auto-answers and candidate screening.",
+      "id": "autonomous-research-agent",
+      "title": "Autonomous AI Research Agent",
+      "subtitle": "Autonomous Multi-Agent Research",
+      "description": "An autonomous multi-agent research intelligence system that conducts deep web investigations, aggregates multi-source findings, evaluates credibility, and synthesizes structured analytical reports.",
       "highlights": [
-        "AI job matching: matches a resume to jobs and gives a match score",
-        "AI resume parsing: reads resume files and pulls out skills and experience",
-        "AI auto-answers: fills common application questions automatically",
-        "AI candidate screening: checks and ranks candidates for employers",
-        "Role-based access for Job Seekers, Employers and Admins with NextAuth; resume uploads via Cloudinary"
+        "LangGraph multi-agent graph: orchestrates specialized agent nodes (Planner, Web Researcher, Fact Checker, Writer) collaborating through cyclical state graphs",
+        "Dynamic web search & tool calling: autonomously queries search APIs, parses web contents, and recursively navigates links to extract authoritative information",
+        "ChromaDB vector memory & synthesis: utilizes ChromaDB for dynamic context storage, semantic deduping, and knowledge synthesis across long research sessions",
+        "Structured report generation: outputs comprehensive, citation-backed markdown dossiers with executive summaries, key findings, and data tables"
       ],
       "stack": [
-        "Next.js 14",
-        "TypeScript",
-        "MongoDB",
-        "AI Matching",
-        "Resume Parsing",
-        "NextAuth.js",
-        "Tailwind CSS"
+        "Python",
+        "LangGraph",
+        "ChromaDB",
+        "OpenAI API",
+        "Claude API",
+        "Tool Calling",
+        "FastAPI",
+        "Pydantic"
       ],
-      "role": "Full-Stack Developer",
-      "year": "2025",
+      "role": "AI Engineer",
+      "year": "2026",
       "link": "",
-      "image": "/images/Job%20portal%20hero.jfif"
+      "image": ""
     },
     {
-      "id": "grb-corporate-website",
-      "title": "GRB Corporate Website",
-      "subtitle": "Responsive corporate site",
-      "description": "A modern, responsive corporate website for GRB with SendGrid-powered contact and enquiry forms.",
+      "id": "electricity-bill-prediction",
+      "title": "AI Electricity Prediction & Energy Assistant",
+      "subtitle": "Predictive Modeling & Energy Assistant",
+      "description": "An intelligent energy forecasting and advisory platform that predicts electricity bills using ML regression models, paired with an LLM-powered tariff assistant utilizing ChromaDB for semantic retrieval.",
       "highlights": [
-        "Designed and built a responsive website aligned with GRB brand identity",
-        "Built fast, clean UIs with React.js and Tailwind CSS for desktop and mobile",
-        "Integrated SendGrid contact and enquiry forms to automate lead management"
+        "Predictive ML modeling: trained Scikit-learn regression models on historical consumption datasets to forecast upcoming billing cycles with high accuracy",
+        "ChromaDB vector tariff assistant: vectorized regional electricity tariff schedules and utility regulations into ChromaDB for instant semantic search and personalized tariff recommendations",
+        "Anomaly & surge detection: monitors consumption time-series data to flag unexpected usage spikes, power leakage, and billing anomalies",
+        "Production API & validation: built with FastAPI, Pydantic validation, React.js frontend, PostgreSQL, SQLAlchemy, and Docker containerization"
       ],
       "stack": [
+        "Python",
+        "ChromaDB",
+        "Scikit-learn",
+        "FastAPI",
+        "Pydantic",
         "React.js",
-        "Tailwind CSS",
-        "SendGrid"
+        "TypeScript",
+        "PostgreSQL",
+        "RAG",
+        "Docker"
       ],
-      "role": "Frontend Developer",
+      "role": "AI & ML Engineer",
       "year": "2025",
       "link": "",
-      "image": "/images/grb%20site%20hero.jfif"
+      "image": ""
     }
   ],
   "education": [
@@ -279,7 +324,7 @@
     },
     {
       "institution": "Besant Technologies",
-      "location": "India",
+      "location": "Chennai, India",
       "degree": "Certification — MERN Stack Development",
       "period": ""
     }

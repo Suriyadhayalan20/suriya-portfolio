@@ -39,7 +39,7 @@ export const AboutSection = () => {
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground">Experience</div>
-                  <div className="font-medium text-foreground">2.5+ Years</div>
+                  <div className="font-medium text-foreground">3 Years</div>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">

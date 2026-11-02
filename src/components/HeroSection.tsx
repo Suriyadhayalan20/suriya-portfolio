@@ -80,7 +80,7 @@ export const HeroSection = () => {
             className="mt-16 grid grid-cols-3 gap-8 max-w-md mx-auto"
           >
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-display font-bold gradient-text">2.5+</div>
+              <div className="text-3xl md:text-4xl font-display font-bold gradient-text">3</div>
               <div className="text-sm text-muted-foreground mt-1">Years Experience</div>
             </div>
             <div className="text-center">

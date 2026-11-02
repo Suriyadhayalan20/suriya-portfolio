@@ -22,22 +22,22 @@ const getLocalResponse = (query: string): string => {
 
     // Who is Suriya / About
     if (has("about", "summary", "tell me about", "who is suriya", "who's suriya", "introduce", "background", "profile", "describe")) {
-        return `Sure, happy to introduce him! 🙌 Suriya is an AI Engineer from ${profile.location} with ${profile.yearsOfExperience} years of experience and a strong full-stack background. He builds production AI features: a RAG assistant with pgvector search, a tool-calling AI agent with human approval, an LLM eval suite, AI call analysis, and real-time deepfake detection. He cares about AI that is safe and testable. Want to hear about a specific project?`;
+        return `Sure, happy to introduce him! 🙌 Suriya is an AI Engineer from ${profile.location} with ${profile.yearsOfExperience} years of experience in production Generative AI, Agentic AI, and Computer Vision. He specializes in autonomous multi-agent systems with LangGraph, enterprise RAG with ChromaDB and pgvector, real-time proctoring with OpenCV & MediaPipe, and automated LLMOps evals. Want to explore a specific project or skill?`;
     }
 
-    // RAG / search
-    if (has("rag", "retrieval", "embedding", "vector", "pgvector", "semantic", "ask ai")) {
-        return "In the SalesRocks product, Suriya built Ask AI — a RAG assistant that answers from a company's own calls, emails, leads and deals. 🔎 Records are chunked, embedded with Gemini embeddings and stored in PostgreSQL + pgvector. Answers stream in, cite their sources, and come with follow-up questions. Personal data is masked before it ever reaches the LLM.";
+    // RAG / search / ChromaDB
+    if (has("rag", "retrieval", "chroma", "chromadb", "embedding", "vector", "pgvector", "semantic", "ask ai")) {
+        return "Suriya builds enterprise-grade RAG and vector retrieval systems! 🔎\n\n• SalesRocks Ask AI: contextual question-answering across calls, emails, leads, and deals using Gemini embeddings and PostgreSQL + pgvector with source citations.\n• ChromaDB vector storage: implemented in the Autonomous Research Agent and Electricity Assistant for rapid semantic retrieval, document ingestion, and tariff advisory.\n• Enterprise safety: PII masking before embedding, context window optimization, and semantic reranking.";
     }
 
-    // Agents / tool calling / evals
-    if (has("agent", "tool call", "tool use", "function call", "do ai", "eval", "human in the loop", "approval")) {
-        return "In the SalesRocks product, Suriya built Do AI — an AI agent that uses LLM function calling. 🛠️ It reads data with tools, then proposes typed actions like create_task, draft_email or score_lead. Nothing runs until a person approves. Every action is checked with Zod twice and logged for audit. He also wrote an eval suite (32 known-answer checks + 10 system checks) to catch regressions when prompts change.";
+    // Agents / LangGraph / tool calling / evals
+    if (has("agent", "langgraph", "langraph", "tool call", "tool use", "function call", "do ai", "eval", "human in the loop", "approval", "multi-agent")) {
+        return "Agentic AI is one of Suriya's primary specialties! 🛠️\n\n• LangGraph Multi-Agent Systems: built SalesRocks Do AI for autonomous CRM task planning and execution with strict human approval gates.\n• Autonomous AI Research Agent: orchestrates specialized LangGraph nodes (Planner, Web Researcher, Fact Checker, Writer) with dynamic web search and ChromaDB memory.\n• Vision Agent: multi-modal AI agent orchestrating 13 computer vision tools via LLM function calling.\n• Safe AI & Evals: dual Zod schema validation, audit logging, and automated test suites (32 known-answer + 10 system invariant checks).";
     }
 
-    // Deepfake / computer vision
-    if (has("deepfake", "tensorflow", "mediapipe", "meeting guardian", "computer vision", "vision", "proctor", "interview", "pytorch", "cnn")) {
-        return "Oh, this one's a favorite! 🤖 Suriya built Deepfake Meeting Guardian — it checks whether a candidate in a Google Meet, Teams or Zoom interview is a real, live person. It runs deepfake, face-swap, liveness, lip-sync and AI-voice checks, plus MediaPipe iris tracking for look-aways. Risk scores show live on a dashboard.";
+    // Deepfake / computer vision / eye tracking
+    if (has("deepfake", "tensorflow", "mediapipe", "meeting guardian", "computer vision", "vision", "proctor", "interview", "eye tracking", "lip-sync", "lip sync", "gaze", "yolo")) {
+        return "Suriya has built advanced computer vision and interview proctoring systems! 🤖\n\n• Live Eye Tracking & Lip-Sync Detection: built with Python, OpenCV, and MediaPipe to track 3D iris gaze for look-away detection and phoneme-to-mouth synchronization, capturing automated video proof.\n• Meeting Bot — Deepfake Guardian: joins Google Meet, Teams, and Zoom interviews to catch synthetic faces, cloned voices, and liveness bypass tricks in real time.\n• Vision Agent: multi-modal AI assistant integrating 13 tools including YOLO11, RapidOCR, and OpenCV YuNet.";
     }
 
     // General AI / LLM
@@ -46,9 +46,9 @@ const getLocalResponse = (query: string): string => {
         return `AI is Suriya's main focus 🤖. Here's what he works with:\n\n${aiSkills}\n\nHighlights: a RAG assistant, a tool-calling agent with human approval, LLM evals, AI call analysis with structured outputs, and real-time deepfake detection.`;
     }
 
-    // Database
-    if (has("database", "mongo", "postgres", "prisma", "sql", "data storage")) {
-        return "When it comes to data, Suriya works with PostgreSQL, pgvector, Prisma, Neon and MongoDB. 🗄️ pgvector is his go-to for storing embeddings for semantic search in RAG apps.";
+    // Database & Vector Storage
+    if (has("database", "mongo", "postgres", "sql", "data storage", "vector db", "chroma", "chromadb", "pgvector")) {
+        return "For vector databases and data engineering, Suriya leverages ChromaDB, PostgreSQL + pgvector, MongoDB, and SQLAlchemy. 🗄️ ChromaDB and pgvector power his vector search, hybrid retrieval, and knowledge ingestion pipelines.";
     }
 
     // Skills / stack
@@ -71,7 +71,7 @@ const getLocalResponse = (query: string): string => {
     // Experience
     if (has("experience", "job", "company", "career", "years", "worked", "employer", "currently")) {
         const history = experience.map(e => `• ${e.company} — ${e.role} (${e.period})`).join("\n");
-        return `Suriya has ${profile.yearsOfExperience} years of experience:\n\n${history}\n\nRight now he is a Software Developer at Atna AI. He works on full-stack projects and builds AI chatbots, RAG and Generative AI features. 📈`;
+        return `Suriya has ${profile.yearsOfExperience} years of experience:\n\n${history}\n\nRight now he is a Junior AI Engineer at Atna AI, building production-focused Generative AI, Agentic AI, and Computer Vision solutions. 📈`;
     }
 
     // Why hire / strengths
@@ -86,7 +86,7 @@ const getLocalResponse = (query: string): string => {
 
     // Learning / future / goals
     if (has("learning", "currently learning", "future", "goal", "aspire", "ambition", "improve", "growing")) {
-        return "He's always learning! 🌱 Right now Suriya is going deeper into AI agents, RAG quality, LLM evaluation and deep learning with PyTorch. His goal is to grow as an AI Engineer and build AI products that are useful and trustworthy.";
+        return "He's always pushing boundaries! 🌱 Right now Suriya is diving deeper into advanced multi-agent systems with LangGraph, real-time multimodal reasoning, dynamic ChromaDB vector memory, and enterprise LLMOps.";
     }
 
     // Hobbies / fun / personal
@@ -131,7 +131,7 @@ const getLocalResponse = (query: string): string => {
     }
 
     // Default Fallback
-    return "Hmm, I'm not sure about that one 🤔 — but I can tell you about Suriya's AI projects (RAG assistant, AI agent, deepfake detection), his skills, his experience as a Software Developer at Atna AI, or share his resume. What sounds interesting?";
+    return "Hmm, I'm not sure about that one 🤔 — but I can tell you about Suriya's AI projects (RAG assistant, AI agents, eye tracking & deepfake proctoring), his skills, his experience as a Junior AI Engineer at Atna AI, or share his resume. What sounds interesting?";
 };
 
 export async function POST(req: Request) {
@@ -159,7 +159,7 @@ export async function POST(req: Request) {
             content: responseContent
         });
 
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error("Chat API Error:", error);
         return NextResponse.json(
             { error: "Internal Server Error" },

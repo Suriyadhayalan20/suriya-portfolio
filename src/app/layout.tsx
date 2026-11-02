@@ -16,7 +16,7 @@ const kanit = Kanit({
 
 export const metadata = {
     title: "Suriya Dhayalan — AI Engineer",
-    description: "AI Engineer building LLM apps, RAG search, AI agents and computer vision systems.",
+    description: "AI Engineer specializing in Agentic AI, Enterprise RAG, and Computer Vision systems.",
 };
 
 export default function RootLayout({

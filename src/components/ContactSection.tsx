@@ -78,7 +78,7 @@ export const ContactSection = () => {
         setIsError(true);
         setStatusMsg("❌ Something went wrong. Please try again.");
       }
-    } catch (error) {
+    } catch {
       setIsError(true);
       setStatusMsg("❌ Server error. Please try again later.");
     } finally {
@@ -100,8 +100,8 @@ export const ContactSection = () => {
           Contact
         </h2>
         <p className="mt-6 max-w-2xl text-center text-sm font-light leading-relaxed text-[#D7E2EA]/70 sm:text-base md:text-lg">
-          Looking for a React / Next.js developer who understands APIs, Redux state
-          management, and production deployments? Let&apos;s connect.
+          Looking for an AI Engineer with production experience in Agentic AI, Enterprise RAG, and Computer Vision? Let&apos;s connect.
+
         </p>
       </div>
 
